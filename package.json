@@ -1,0 +1,39 @@
+{
+    "name": "podlodkin-freeton-vscode-solidity",
+    "displayName": "Free TON Solidity",
+    "description": "Syntax highlighting for Solidity source code files written for Free TON",
+    "version": "1.0.0",
+    "publisher": "podlodkin",
+    "license": "MIT",
+    "icon": "images/icon.png",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/podlodkin/podlodkin-freeton-vscode-solidity"
+    },
+    "engines": {
+        "vscode": "^1.59.0"
+    },
+    "categories": [
+        "Programming Languages", "Snippets"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "solidity",
+            "aliases": ["freeton-solidity", "solidity"],
+            "extensions": [".sol",".solidity"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "solidity",
+            "scopeName": "source.solidity",
+            "path": "./syntaxes/solidity.tmLanguage.json"
+        }],
+    "snippets": [
+      {
+        "language": "solidity",
+        "path": "./snippets/solidity.json"
+      }
+    ]
+
+    }
+}
